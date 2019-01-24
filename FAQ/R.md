@@ -35,3 +35,5 @@ Error in switch(x, 成功认证 = 1, 未成功认证 = 0, NULL) :
 
 > map_at(.x = test, .at = c(1), .f = i(.))
 ```
+
+**Note：** 这个方法比较低效，毕竟还有调用另外循环。可以采用更高效的方式，使用 `case_when()`——它在 `dplyr` 包中。
