@@ -158,6 +158,17 @@ $ git remote add origin second:<username>/test.git
 
 其他部分没有相应的调整，操作相同。
 
+## 2.3 clone 私人仓库
+
+`clone` 个人仓库需要使用不一样的命令来完成，
+
+```bash
+git clone https://<username>@github.com/<username>/<git_url>
+
+# 例如 test 用户下的 get 仓库，那么需要使用如下命令
+git clone https://test@github.com/test/get.git
+```
+
 
 
 # $\rm A$. 参考
